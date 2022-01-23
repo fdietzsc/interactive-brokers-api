@@ -132,6 +132,6 @@ dmypy.json
 vscode/
 config/
 .resources and notes/
-ibc/resources
+src/resources
 
 .idea

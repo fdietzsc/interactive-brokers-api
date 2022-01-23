@@ -94,7 +94,7 @@ Here is a simple example of using the `ibc-api` library.
 ```python
 from pprint import pprint
 from configparser import ConfigParser
-from ibc.client import InteractiveBrokersClient
+from src.ibc.client import InteractiveBrokersClient
 
 # Initialize the Parser.
 config = ConfigParser()

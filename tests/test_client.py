@@ -2,21 +2,21 @@ import unittest
 
 from unittest import TestCase
 from configparser import ConfigParser
-from ibc.client import InteractiveBrokersClient
-from ibc.rest.market_data import MarketData
-from ibc.rest.accounts import Accounts
-from ibc.rest.portfolio_analysis import PortfolioAnalysis
-from ibc.rest.customer import Customer
-from ibc.session import InteractiveBrokersSession
-from ibc.utils.gateway import ClientPortalGateway
-from ibc.rest.pnl import PnL
-from ibc.rest.contract import Contracts
-from ibc.rest.alert import Alerts
-from ibc.rest.scanner import Scanners
-from ibc.rest.trades import Trades
-from ibc.rest.portfolio import PortfolioAccounts
-from ibc.rest.orders import Orders
-from ibc.rest.data import Data
+from src.ibc.client import InteractiveBrokersClient
+from src.ibc.tasks.market_data import MarketData
+from src.ibc.tasks.accounts import Accounts
+from src.ibc.tasks.portfolio_analysis import PortfolioAnalysis
+from src.ibc.tasks.customer import Customer
+from src.ibc.session import InteractiveBrokersSession
+from src.ibc.utils.gateway import ClientPortalGateway
+from src.ibc.tasks import PnL
+from src.ibc.tasks.contract import Contracts
+from src.ibc.tasks.alert import Alerts
+from src.ibc.tasks.scanner import Scanners
+from src.ibc.tasks import Trades
+from src.ibc.tasks import PortfolioAccounts
+from src.ibc.tasks.orders import Orders
+from src.ibc.tasks.data import Data
 
 
 class InteractiveBrokersClientTest(TestCase):

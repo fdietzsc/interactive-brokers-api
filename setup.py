@@ -1,13 +1,13 @@
 from setuptools import setup
-from setuptools import find_namespace_packages
+# from setuptools import find_namespace_packages
+from setuptools import find_packages
 
 # Open the README file.
 with open(file="README.md", mode="r") as fh:
     long_description = fh.read()
 
 setup(
-
-    name='ibc-api',
+    name='ibc',
 
     # Define Author Info.
     author='Alex Reed',
@@ -27,13 +27,12 @@ setup(
     # Define dependencies.
     install_requires=[
         'requests==2.24.0',
-        'fake-useragent'
+        'fake-useragent',
+        'celery[redis]'
     ],
 
-    # Specify folder content.
-    packages=find_namespace_packages(
-        include=['ibc']
-    ),
+    package_dir={'': 'src'},
+    packages=find_packages(where='src'),
 
     # Define the python version.
     python_requires='>3.7',
